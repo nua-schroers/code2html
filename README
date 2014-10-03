@@ -1,0 +1,54 @@
+*** README for code2html(1) ***
+*** $Revision: 0.9.1_patch3 $
+*** $Date: 2012/01/17 12:00:00 $
+
+[For details on installing code2html see the INSTALL file]
+
+This is the README for code2html, a tool wich allows you to convert
+your source code files to syntax highlighted HTML. In the future other 
+output-formats may be added, the hooks to support this are already
+there.
+
+This fork of code2html has been patched to support the following
+additional features: Replace the older, deprecated <FONT>-tags with
+<SPAN>-tags that are configured using CSS. The <B>, <STRONG>, <I> and
+<U>-tags are likewise replaced with the appropriate CSS-styles. The
+CORBA IDL-language is now supported with appropriate syntax-
+highlighting. The patch is distributed via http://www.field-theory.org
+since I (Wolfram Schroers) have not managed to contact the original
+author of code2html.
+
+For options and details please query the man-page which is distributed 
+together with code2thml. In short, there are 3 ways to use code2html:
+
+o Convert a simple source-code file to HTML. For example to convert
+  the code2html perl script itself to an HTML file, use
+
+	code2html code2html out.html
+
+  The first part ('code2html') calls the program itself, the second
+  block is the source file, where code2html should take the
+  source-code to syntax highlight from, and the third and last part is 
+  the desitination file.
+
+  The source and destination files are optional, if not given STDIN
+  and STDOUT will be used.
+
+o Use code2html in patch mode. Code2html allows you to have inline
+  source code in an HTML file. It can then take this file and replace
+  the source code in the HTML file with its syntax highlighted
+  counterpart. 
+
+  For details see the man-page.
+
+o At last code2html can also be used as a CGI script.
+
+  See the man-page and the example at
+
+  http://www.palfrader.org/code2html/
+
+  for details.
+
+
+Have fun.
+Peter Palfrader <code2html@palfrader.org>
