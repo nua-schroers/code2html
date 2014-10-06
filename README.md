@@ -8,6 +8,8 @@ Pretty print source code in various programming languages in HTML.
 
 This is a fork of the `code2html` pretty printer developed by Peter Palfrader. The original distribution can be found at [the official homepage](http://www.palfrader.org/code2html/).
 
+The license is GPLv2 (cf. the included file `LICENSE`).
+
 Features
 --------
 
